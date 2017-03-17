@@ -1,0 +1,34 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.inner{
+	height: 35px;
+	background-color: #efefef;
+}
+.nav{
+	height: 35px;
+	margin:0px auto;
+	list-style: none;
+	line-height: 35px;
+	width: 1050px;
+}
+.l1{
+	width: 500px;
+	display: block;
+	float: left;
+}
+.l2{
+	float: left;
+	margin-left: 400px;
+}
+.nav1{
+	width: 1050px;
+	list-style: none;
+	margin:0px auto;
+}
+.logo{
+	font-size:25px;
+	color: blue;
+	font-family: "Microsoft Yahei"；
+}
