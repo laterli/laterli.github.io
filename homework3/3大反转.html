@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.header{
+			width: 200px;
+			height: 200px;
+			margin: 200px auto;
+			
+
+		}
+		.headera{
+			width: 200px;
+			height: 200px;
+			position: relative;
+
+		}
+		.box{
+			width: 200px;
+			height: 200px;
+			transition: transform 5s;
+			transform-style: preserve-3d;
+		}
+		.box img{
+			position: absolute;
+			top: 0px;
+		}
+		.box1{
+			transform: translateZ(100px);
+		}
+		.box2{
+			transform: translateZ(-100px);
+		}
+		.box3{
+			transform: rotateY(90deg) translateZ(100px);
+		}
+		.box4{
+			transform: rotateY(90deg) translateZ(-100px);
+		}
+		.headera:hover .box{
+			transform: rotateY(360deg) rotateX(360deg) ;
+
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="headera">
+			<div class="box">
+				<img class="box1" src="1.jpg" alt="">
+				<img class="box2" src="2.jpg" alt="">
+				<img class="box3" src="3.jpg" alt="">
+				<img class="box4" src="4.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
