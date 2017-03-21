@@ -12,8 +12,7 @@
 	width: 2.59rem;
 	height: 0.96rem;
 	float: left;
-	text-decoration: none;
-
+	text-decoration: none;	
 }
 .linka{
 	width: 2.31rem;
@@ -110,4 +109,49 @@
 .img2{
 	width: 6.6rem;
 	height: 4.2rem;
+}
+.why{
+	height: 4.75rem;
+	text-align: center;
+	background-color: #e5e5e5;
+	margin: 0px auto;
+}
+.fill{
+	height: 0.49rem;
+}
+.img3{
+	width:2.49rem;
+	display: block;
+	margin: 0px auto;
+}
+.innera{
+	width: 4.31rem;
+	height: 0.58rem;
+	margin: 0px auto;
+}
+.ctr{
+	font-size: 0.39rem;
+	display: block;
+	float: left;
+}
+.ctrs{
+	font-size: 0.39rem;
+	display: block;
+	float: left;
+	color: red;
+	font-weight: bolder;
+}
+.ctre{
+	font-size: 0.1596rem;
+	display: block;
+	height: 0.5rem;
+}
+.img4{
+	width: 5.7rem;
+	height: 0.17rem;
+	display: block;
+	margin: 0px auto;
+}
+.round{
+	
 }
