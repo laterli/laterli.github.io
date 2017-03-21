@@ -48,3 +48,23 @@
 33.         在要其下边的盒子里加入clear：both；可以清除上边的浮动
 34. background-repeat:no-repeat; 可以让背景图片不重复
 35. margin:0px auto;  块状元素的居中
+36. 用UI库进行导入CSS样式时UI库中的bootstrap下的dist中的文件夹必须与所写html文件处在同一级
+37. .inner4 .p2:before{
+    content: '';
+    width: 75px;
+    border: 1px solid #c9c9c9;
+    position: absolute;
+    display: block;
+    top:115px;
+    left: 375px;
+}
+.inner4 .p2:after{
+    content: '';
+    width: 75px;
+    border: 1px solid #c9c9c9;
+    position: absolute;
+    display: block;     加文字在content内输入
+    top:115px;
+    left: 595px;
+}                   在文字前边以及后边加一个横线
+38. 

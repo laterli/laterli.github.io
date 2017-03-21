@@ -1,0 +1,113 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.top{
+	width: 7.2rem;
+	height: 0.96rem;
+	background-color: #2aacff;
+}
+.brow{
+	display: block;
+	width: 2.59rem;
+	height: 0.96rem;
+	float: left;
+	text-decoration: none;
+
+}
+.linka{
+	width: 2.31rem;
+	height: 0.96rem;
+	display: block;
+	float: left;
+}.arrow{
+	line-height: 0.96rem;
+	font-size: 0.6rem;
+	color: #fff;
+	width: 2.31rem;
+	height: 0.96rem;
+}
+.title{
+	font-size: 0.36rem;
+	color: #fff;
+	display: block;
+	text-align: center;
+	line-height: 0.96rem;
+	width: 1.96rem;
+	height: 0.96rem;
+	float: left;	
+}
+.brow{
+	font-size: 0.28rem;
+	float: right;
+	display: block;
+	color: #fff;
+	width: 1.41rem;
+	line-height: 0.96rem;
+	text-decoration: none;
+}
+.plate{
+	height: 2.9rem;
+}
+.img1{
+	width: 4.64rem;
+	height: 3.16rem;
+	display: block;
+	margin: 0.16rem auto;
+}	
+.advert{
+	font-size: 0.32rem;
+	font-family: 'microsoft yahei';
+	margin-left: 0.25rem;
+}
+.price{
+	font-size: 0.28rem;
+	font-family: 'microsoft yahei';
+	margin-left: 0.25rem;
+}
+.money{
+	font-size: 0.32rem;
+	color: #d11f1f;
+	font-family: 'microsoft yahei';
+	font-weight: bold;
+}
+.optain{
+	width: 7.2rem;
+	height: 0.95rem;
+}
+.bewrite{
+	display: block;
+	font-size: 0.32rem;
+	height: 0.95rem;
+	width: 3.6rem;
+	border: 1px solid #ccc;
+	line-height: 0.95rem;
+	text-align: center;
+	float: left;
+	color: #000;
+}
+.parameter{
+	font-size: 0.32rem;
+	width: 3.6rem;
+	height: 0.95rem;
+	display: block;
+	text-align: center;
+	line-height: 0.95rem;
+	border: 1px solid #ccc;
+	float: left;
+	color: #000;
+}
+.clicka{
+	border-bottom: 2px solid red;
+	color: red;   /*文字颜色不变问*/
+}
+.pic{
+	width: 7.2rem;
+	height: 5.02rem;
+	line-height: 5.02rem;
+	text-align: center;
+}
+.img2{
+	width: 6.6rem;
+	height: 4.2rem;
+}
