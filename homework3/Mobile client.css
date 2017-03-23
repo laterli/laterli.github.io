@@ -13,8 +13,9 @@
 	height: 0.96rem;
 	float: left;
 	text-decoration: none;	
+	font-size: 0.28rem;
 }
-.linka{
+.linka{	
 	width: 2.31rem;
 	height: 0.96rem;
 	display: block;
@@ -110,6 +111,9 @@
 	width: 6.6rem;
 	height: 4.2rem;
 }
+.banner{
+	height: 11.3rem;
+}
 .why{
 	height: 4.75rem;
 	text-align: center;
@@ -152,6 +156,184 @@
 	display: block;
 	margin: 0px auto;
 }
+/*以下*/
 .round{
+	height: 2.53rem;
+}
+.garden{
+	width: 1.64rem;
+	height: 1.64rem;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+	border-top: 1px solid #000;
+	border-bottom: 5px solid #000;
+	border-radius: 50%;
+	float: left;
+	margin-left: 0.55rem;
+}
+.gardenb{
+	width: 1.63rem;
+	height: 1.63rem;
 	
+
+}
+.sizea{
+	width: 1.64rem;
+	height: 1.64rem;
+	border: 1px solid #000;
+	border-radius: 50% ;
+	float: left;
+	margin-left: 0.55rem;
+}
+.sizeb{
+	width: 1.63rem;
+	height: 1.63rem;
+	border-bottom: 5px solid #000;
+	border-radius: 50%;
+}
+.plan{
+	width: 1.64rem;
+	height: 1.64rem;
+	border: 1px solid #000;
+	border-radius: 50% ;
+	float: left;
+	margin-left: 0.55rem;
+}
+.plana{
+	width: 1.63rem;
+	height: 1.63rem;
+	border-bottom: 5px solid #000;
+	border-radius: 50%;
+}
+/*以上*/
+.gardenc h1{
+	font-size: 0.4723rem;
+}
+.gardenc h3{
+	font-size: 0.32rem;
+	padding-bottom: 0.15rem;
+}
+.gardenc span{
+	display: block;
+	margin-left: 0.57rem;
+	margin-right: 0.57rem;
+	font-size: 0.24rem;
+}
+.gardenc img{
+	margin-top: 0.41rem;
+	width: 6.6rem;
+	height: 3.81rem;
+}
+.container{
+	
+	background-color: #e5e5e5;
+	height: 13.95rem;
+	width: 7.2rem;
+	margin: 0;
+	padding:0;
+}
+.containera{
+	text-align: center;	
+
+}
+.container h2{
+	font-size: 0.4723rem;
+}
+.container h4{
+	font-size: 0.32rem;
+}
+.container img{
+	width: 4.65rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+.before{
+	font-size: 0.32rem;
+}
+.after{
+	font-size: 0.32rem;
+	color: red;
+}
+.nav table{
+	margin: 0 auto;
+	margin-top: 0.5rem;
+}
+.nav thead,.navb,.nav2,.navc,.nav3,.navd{
+	text-indent: 0.25rem;
+}
+.nav thead{
+	padding-left: 0.25rem;
+}
+.nav thead th{	
+	background-color: #fff;
+}
+.nava{
+	width: 	1.92rem;
+	height: 0.55rem;
+	font-size: 0.28rem;
+}
+.nav1{
+	width: 1.92rem;
+	height: 0.55rem;
+	font-size:0.25rem;
+	color: red;	
+}
+.navb{
+	width: 1.92rem;
+	height: 0.55rem;
+	font-size: 0.25rem;
+}
+.nav2{
+	width: 1.92rem;
+	height: 0.55rem;
+	font-size: 0.25rem;	
+	color:red;
+}
+.navc{
+	width: 1.92rem;
+	height: 0.55rem;
+	font-size: 0.25rem;
+	background-color: #fff;
+}
+.nav3{
+	width: 1.92rem;
+	height: 0.55rem;
+	font-size: 0.25rem;	
+	color:red;
+	background-color: #fff;
+}
+.navd{
+	width: 1.92rem;
+	height: 0.55rem;
+	font-size: 0.25rem;
+	background-color: #fff;
+}
+.nave{
+	width: 1.92rem;
+	height: 0.55rem;
+	font-size: 0.24rem;
+	background-color: #fff;
+}
+.nav4{
+	width: 1.92rem;
+	height: 0.55rem;
+	font-size: 0.24rem;	
+	color:red;
+	background-color: #fff;
+}
+.nave div{
+	margin-left: 0.25rem;
+}
+.nav4 div{
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
+}
+.navf{
+	width: 2.2rem;
+}
+.nav5{
+	width: 2.5rem;
+}
+.navd,.nave,.nav4{
+	height: 2rem;
 }

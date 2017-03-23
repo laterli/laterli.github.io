@@ -67,4 +67,5 @@
     top:115px;
     left: 595px;
 }                   在文字前边以及后边加一个横线
-38. 
+38. lorem+n   添加文字省事
+39. text-indent npx 为字体设置首行缩进
