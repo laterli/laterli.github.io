@@ -13,22 +13,22 @@
 	margin: 0px auto;
 
 }
-.header .logo{
+.logo{
 	color: blue;
 	font-size: 30px;
 	margin-top: 40px;
 	margin-left: 20px;
 	width: 500px;
 }
-.header .search{
+.search{
 	float: right;
 	margin-top: -30px;
 }
-.header .search input {
+.search input {
 	width: 200px;
 	height: 25px;
 }
-.header .search button{
+.search button{
 	width: 35px;
 	height: 25px;
 
@@ -97,22 +97,23 @@
 	height: 540px;
 	margin: 0px auto;
 }
-.container .tit{
+.tit{
 	height: 250px;
-	list-style: none;
 	width: 450px;
-	display: block;
+	margin-right: 25px;
+	margin-left: 25px;
 }
-.container .tits{
+.tit li{
+	color: #5e5e5e;
+}
+.tits{
 	display: block;
 	height: 85px;
 	line-height: 85px;
 }
-.container .tit .link1{
+.link1{
 	text-decoration: none;
 	color: black;
-	display: block;
-	float: left;
 }
 .link2{
 	float: right;
@@ -151,9 +152,14 @@
 	margin-left: 20px;
 }
 .link8{
-	margin-top: 50px;
-	margin-left: 100px;
-	width: 44px;
+	margin-top: 60px;
+	margin-left: 25px;
+	border:0px;
+	width: 66px;
+	height:19px;
+	float: left;
+	padding:6 11 6 11;
+	color: #fff;
 }
 .link9{
 	margin-top: -60px;
@@ -165,6 +171,7 @@
 .tit4{
 	width: 1000px;
 	height: 300px;
+	margin-left: 25px;
 }
 .nav1{
 	line-height: 75px;
@@ -203,6 +210,8 @@
 }
 .url{
 	display: block;
+	font-size: 12px;
+	width: 222px;
 }
 .footer{
 	width: 1000px;
@@ -212,24 +221,38 @@
 }
 .first{
 	height: 248px;
-	width: 550px;
+	width: 450px;
 	float: left;
-	left: 20px
+	margin-left:25px;
+	margin-right: 25px;
+}
+.firtop{
+	color:#535353;
+	margin-left:25px;
 }
 .firnav{
 	display: block;
 	float: left;
 	list-style: none;
+	font-size:12px;
+	margin-left: 25px;
+	color: #737373;
 }
 .firnav2{
 	display: block;
 	float: left;
-	list-style: none;	
+	list-style: none;
+	font-size:12px;
+	margin-left:25px;
+	color:#737373;
 }
 .firnav3{
 	display: block;
 	float: left;
-	list-style: none;	
+	list-style: none;
+	font-size:12px;
+	margin-left:25px;	
+	color:#737373;
 }
 
 .second{
@@ -237,11 +260,27 @@
 	height: 248px;
 	width: 200px;
 	list-style: none;
+	color:#535353;
+}
+.secnav{
+	margin-left:25px;
+}
+.seccon{
+	margin-left:25px;
+	font-size:12px;
 }
 .third{
 	float: right;
 	height: 248px;
 	width: 250px;
+}
+.thinav{
+	color:#535353;
+	margin-left:25px;
+}
+.fourth{
+	clear:both;
+	height:78px;
 }
 .four2{
 	float: left;
@@ -258,4 +297,7 @@
 	float: right;
 	font-size: 12px;
 	list-style: none;
+}
+.four4 a{
+	text-decoration:none;
 }

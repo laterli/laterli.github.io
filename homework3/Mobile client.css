@@ -288,7 +288,7 @@
 .container h4{
 	font-size: 0.32rem;
 }
-.container img{
+.containera img{
 	width: 4.65rem;
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
@@ -390,6 +390,14 @@
 	background-color: #2aacff;
 	position:relative;
 	margin-left: 0.25rem;
+}
+.pica{
+	width: 2rem;
+	height:1rem;
+	position:absolute;
+	top:35.2rem;
+	left:5rem;
+	z-index: 999;
 }
 .gardenn{
 	width: 0.22rem;
