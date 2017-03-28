@@ -51,46 +51,30 @@
 			<li>6</li>
 			<li>7</li>
 		</ul>
-	<script src="jquery.js"></script>
+	
 	<script>
-		var box=document.querySelector('.box')
+		
 		var img=document.querySelector('img')
 		
-		$('li').click(function(){
-			var pic=['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg',]
-			var ind=$(this).index()
-			var lost=pic[ind]
-			$('img').attr('src',lost)
-		})
+		var pic=['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg',]
 			
-		var n=7
-		setInterval(function(){
-			n--
 			
-			if(n===6){
-				img.src='2.jpg'
+		var li=document.querySelectorAll('li')
+		n=1
+		setInterval(
+			function fun(){
+				img.src=pic[n]
+				n++;
+				if(n===7){
+					n=0
+					}
+			for(var i=0;i<pic.length;i++){
+				li[i].index=i;
+				li[i].onclick=function(){
+					img.src=pic[this.index]
+				}				//点击换图
 			}
-			if(n===5){
-				img.src='3.jpg'
-			}
-			if(n===4){
-				img.src='4.jpg'
-			}
-			if(n===3){
-				img.src='5.jpg'
-			}
-			if(n===2){
-				img.src='6.jpg'
-			}
-			if(n===1){
-				img.src='7.jpg'
-			}
-			if(n===0){
-				img.src='1.jpg'
-				n=7;
-			}
-
-		},5000)
+		},1000)
 	</script>
 
 
