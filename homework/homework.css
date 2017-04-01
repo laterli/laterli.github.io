@@ -11,6 +11,7 @@
 	height: 160px;
 	width: 1000px;
 	margin: 0px auto;
+	position: relative;
 }
 .search input{
 	background-color: #f1f1f1;
@@ -38,7 +39,8 @@
 	float: right;
 	margin-top: -30px;
 	position: absolute;
-	left: 1000px;
+	left: 750px;
+	position: absolute;
 }
 .search input {
 	width: 200px;
