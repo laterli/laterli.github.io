@@ -1,4 +1,4 @@
-# css的笔记
+        # css的笔记
 1.  div:hover{      hover为伪类选择器；鼠标悬浮所表现的状态
         animation-play-state: paused;
      } 设置鼠标悬停
@@ -57,15 +57,15 @@
     display: block;
     top:115px;
     left: 375px;
-}
-.inner4 .p2:after{
-    content: '';
-    width: 75px;
-    border: 1px solid #c9c9c9;
-    position: absolute;
-    display: block;     加文字在content内输入
-    top:115px;
-    left: 595px;
-}                   在文字前边以及后边加一个横线
+        }
+        .inner4 .p2:after{
+            content: '';
+            width: 75px;
+            border: 1px solid #c9c9c9;
+            position: absolute;
+            display: block;     加文字在content内输入
+            top:115px;
+            left: 595px;
+        }                  *在文字前边以及后边加一个横线*
 38. lorem+n   添加文字省事
 39. text-indent npx 为字体设置首行缩进

@@ -11,7 +11,21 @@
 	height: 160px;
 	width: 1000px;
 	margin: 0px auto;
-
+}
+.search input{
+	background-color: #f1f1f1;
+	border: 0px;
+}
+.search button{
+	position: relative;
+	left: -40px;
+	background-color: #f1f1f1;
+	border: 0px;
+	top:2px;
+}
+.search button img{
+	width: 15px;
+	height:15px;
 }
 .logo{
 	color: blue;
@@ -23,10 +37,12 @@
 .search{
 	float: right;
 	margin-top: -30px;
+	position: absolute;
+	left: 1000px;
 }
 .search input {
 	width: 200px;
-	height: 25px;
+	height: 28px;
 }
 .search button{
 	width: 35px;
