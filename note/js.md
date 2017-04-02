@@ -91,4 +91,57 @@
 56. event.target   *操作距离鼠标指针最近的元素*
 57. 参数.stopPropagation *阻止事件冒泡*
 58. dom.addEventListener('动作'，函数)  *添加一个独立的事件*
-59. 
+59. 把obj的函数深度克隆给nObj：
+60. function clone(opi){
+        var newObj=opi instanceof Array?[]:{};*instanceof判断Array是否为数组*
+        for(var i in opi){
+            if(typeof(opi[i])!=='object'){
+                newObj[i]=opi[i]
+            }else{
+                newObj[i]=clone(opi[i])
+            }
+        }
+        return newObj;
+    }               *函数部分*
+    
+    var nObj=clone(obj); *克隆给nObj*
+61. 
+    function Animal(){};        *构造一个函数对象*
+        Animal.prototype.eat=function(){
+            console.log('吃')
+        }                   *prototype是原型对象*
+        function Cat(){};
+
+        Cat.prototype=new Animal();     *把构造函数Animal赋值给Cat的原型*
+
+        Cat.prototype.drink=function(){
+            console.log('喝')
+        }
+        var cat=new Cat();
+        var animal=new Animal();
+        cat.eat()           *调用了Animal的属性*
+62. 立即执行函数：(function fun(形参){})(实参)
+63. 简易的jq库：
+64.     function $(selector){
+            this.dom=document.querySelector(selector)
+        }
+        $.prototype.click=function(fun){
+            this.dom.onclick=fun;
+        }
+
+            dom是自己设置的变量this.dom=btn，button是实参
+        *调用jq库的函数*
+        var btn=new $('button')
+        console.log(btn.dom)*输出的是<button>按钮</button>*
+
+        btn.click(function(){
+            console.log('ds')
+        })
+65. typeof能检测原始类型，但是null和对象都会输出object;
+66. typrof(要检测的数据类型)==='你认为的数据类型'
+67. 要检测的内容+instanceof+构造函数具体步骤见60；
+68. 与&&   或||   非！
+69. break   *终止循环，不影响循环外的东西比如；for*
+70. continue  *结束本次循环，调到下一次，即跳过本次循环*
+71. return  *执行后函数内下面的代码不执行*
+72. 
