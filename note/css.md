@@ -69,3 +69,6 @@
         }                  *在文字前边以及后边加一个横线*
 38. lorem+n   添加文字省事
 39. text-indent npx 为字体设置首行缩进
+40. 响应式大断点：@madia screen and (max-width:768px){
+41.         发生以上情况后出现的事件
+42.      }

@@ -144,4 +144,62 @@
 69. break   *终止循环，不影响循环外的东西比如；for*
 70. continue  *结束本次循环，调到下一次，即跳过本次循环*
 71. return  *执行后函数内下面的代码不执行*
-72. 
+72. 冒泡排序：var arr=[1,2,4,5,7,9,3,6,8,10,0,11,13,12]
+        function sequence(arr){
+            for(var i=arr.length-1; i>0; i--){
+                for(var j=0;j<i;j++){
+                    if(arr[j]>arr[j+1]){
+                        [arr[j],arr[j+1]]=[arr[j+1],arr[j]]
+                    }
+                }
+            }
+                
+        }*数字两两交换性能较差*
+73. 选择排序：var arr1=[11,4,3,6,7,8,9,0,43,]
+        function sort(arr){
+            for(var i=0;i<arr.length;i++){
+                min=i;
+                for(var j=i+1;j<arr.length;j++){
+                   if(arr[min]>arr[j]){
+                        min=j           //把j赋值给min
+                    }
+                }
+                [arr[i],arr[min]]=[arr[min],arr[i]]  //换数字的位置
+            }
+            return arr
+        } *假设最小值为最左边的数其他书和它比有比它小的交换位置。i++*
+74. 快速排序：var arr=[1,4,8,9,0,5,4,3,2]
+        function sequence(arr,left,right){
+            var index=partition(arr,left,right)
+            if(left<index-1){
+                sequence(arr,left,index-1)
+            }
+            if(index<right){
+                sequence(arr,index,right)
+            }
+        }           //分中点
+        function partition(arr,i,j){
+            var mid=Math.floor((i+j)/2);
+                while(i<=j){
+                    while(arr[i]<arr[mid]){
+                    i++
+                }
+                    while(arr[j]>arr[mid]){
+                    j--;
+                }
+                    if(i<=j){
+                    [arr[i],arr[j]]=[arr[j],arr[i]];
+                    i++;
+                    j--;
+                }
+            }       //计算
+            *不停的分中点比较两边大小交换位置*
+75. 控制升序和降序：var arr=[1,3,7,9,0,6,4,2]
+        var lost=arr.sort(function(a,b){
+            return b-a          //控制排序的顺序升序或者降序
+        })
+76. 数组去重，正则算法，检索，等
+77. this是对象，指向调用他的对象，链式操作的返回值是他本身才可一用this。
+78. on blur 失去焦点  与on click 用法一样。
+79. 
+            

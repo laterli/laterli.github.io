@@ -26,3 +26,5 @@
      px为固定像素
      em参照父级元素的font-size:npx;em的大小*乘以父级的font-size大小
 20. 手机端要用rem为单位用font-size
+21. input的type属性submit，可以把输入框变为按钮
+22. 
