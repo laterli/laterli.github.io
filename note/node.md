@@ -31,5 +31,10 @@
 28. 为jade加需要在server文件夹中加入app.set('view engine','jade')
 29. app.render(' ')渲染的内容
 30. npm init 建立一个package.json文件
-31. var bodyparser=require.urlencoded({extended:false})
+31. var bodyparser=require("body-parsser") *这行代码是引入*
+32. app.use(bodyparser.urlencoded({extended:false}))
         *这行代码使用bodyParser*
+33. block content 继承或使用继承
+34. extends 被继承的页面 成为它的子页
+35. 在jade里写入-后边可以写js
+36. each 变量 in 内容  jade里的循环
