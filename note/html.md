@@ -19,7 +19,7 @@
     15. &nbsp ;  空格
     16. display-inline  将块状元素转为行内元素
     17. 把行内元素转为块状元素就可以设置背景色了
-    18. 移动端的设置在head内加{ mate:vp  tab}
+    18. 移动端的设置在head内加{ meta:vp  tab}
     19. 上边的操作可以为：meta name="viewport" content="width=device-width, 
          user-scalable=no, initial-scale=1.0, maximum-scale=1.0, 
          minimum-scale=1.0"效果相同；user-scalable=no:设置缩放的
