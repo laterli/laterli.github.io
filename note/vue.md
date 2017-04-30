@@ -108,6 +108,64 @@
             }
         }
 
+    Vuex:数据传输
+        html:
+        <span>{{number}}</span>
+        <button>+</button>
+        var store=new Vue.Store({
+                state{
+                    number=0        公用的数据
+                }
+            }),
+                mutations:{
+                    add:function(){
+                         state.numver++;         mutations操作state内的数据
+                    }
+                }
+        new Vue({
+            el:'#app',
+            methods:{
+                btn:function(){
+                    store.commit('add')
+                    //commit 提交到mutation(add是用来传数据的函数)
+                }
+            }
+        })
+
+    vue-router:
+        查文档，
+
+    vue的工程化
+        project 文件夹//英文
+            node_moudules
+            src
+                components
+                    .vue 文件
+                store
+                    index.js vuex 文件
+                router
+                    index.js vue-router 文件
+                main.js
+            index.html
+            package.json
+            webpack.config.js
+    .vue文件与html文件相似
+    template 标签内写网页，但是只能暴露一个标签
+    Es6引入外部模块用
+        import Vue from 'vue'不写地址会从moudules文件中找
+    暴露接口
+        export default 
+    favicon 制作工具制作标签头像格式为ico
+    npm install -g webpack  文件打包
+    npm install -g webpack-dev-server  开服务器适合制作与调试
+    submit.prevent阻止submit的默认行为即点击翻页
+
+
+    
+
+    
+
+
 
 
 
