@@ -25,6 +25,8 @@
          minimum-scale=1.0"效果相同；user-scalable=no:设置缩放的
          px为固定像素
          em参照父级元素的font-size:npx;em的大小*乘以父级的font-size大小
-    20. 手机端要用rem为单位用font-size
+    20. 手机端要用rem为单位用font-size，
+        同时要引入fontsizeset.js 文件
     21. input的type属性submit，可以把输入框变为按钮
     22. 在css属性值后面加个！important可以优先使用这个属性；
+

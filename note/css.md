@@ -26,11 +26,11 @@
     10.         块元素会占父元素的100%
     11. 水平居中text-align：center;
     12. 垂直居中line-height：npx；
-    13. --pasition-relative;    原来的位置--相对于自身进行定位
+    13. --position-relative;    原来的位置--相对于自身进行定位
     14. --left:npx; right:npx;  不脱离文档流--他的位置还在
-    15. ==pasition-absolute;  绝对定位从网页的（0.0）开始
+    15. ==position-absolute;  绝对定位从网页的（0.0）开始
     16. ==left:npx; top:npx;  脱离文档流
-    17. ++pasition:fixed;    固定定位相对于窗口
+    17. ++position:fixed;    固定定位相对于窗口
     18. ++left:npx; top:npx; 脱离文档流
     19. z-index  锤子堆叠顺序
     20. 在没有position等位时不允许用z-index
