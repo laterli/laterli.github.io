@@ -30,3 +30,5 @@
     21. input的type属性submit，可以把输入框变为按钮
     22. 在css属性值后面加个！important可以优先使用这个属性；
 
+    <textarea name="a" style="width:800px;height:80px;" placeholder='这里写备注'></textarea>
+

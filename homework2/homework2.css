@@ -424,12 +424,6 @@
 	background-color: #f9f8f8;
 	border: 1px dashed #d4d2d2;
 }
-#input2{
-	height: 120px;
-	width: 630px;
-	background-color: #f9f8f8;
-	border: 1px dashed #d4d2d2;
-}
 .footer3 div button{
 	background-color: #3c9cd3;
 	width: 93px;
@@ -437,6 +431,12 @@
 	color: #fff;
 	margin-left: 50px;
 	margin-top: 25px;
+}
+.footer3 textarea{
+	height: 120px;
+	width: 630px;
+	background-color: #f9f8f8;
+	border: 1px dashed #d4d2d2;
 }
 .tiancun8{
 	height: 48px;
