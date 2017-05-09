@@ -184,7 +184,7 @@
   
     <h1 itemprop="name">
       <a class="article-title" href="/2017/05/05/first-Blog/">
-        first Blog
+        src属性的改变
         
       </a>
     </h1>
@@ -195,7 +195,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="Hello-Workd"><a href="#Hello-Workd" class="headerlink" title="Hello Workd"></a>Hello Workd</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">My name is liin i am buy a watch one years old</div></pre></td></tr></table></figure>
+        <h3 id="关于在vue中改变图片的src属性"><a href="#关于在vue中改变图片的src属性" class="headerlink" title="关于在vue中改变图片的src属性"></a>关于在vue中改变图片的src属性</h3><p>很多人在vue的开发中遇到这样的问题，img的src属性绑定url变量，然后图片加载失败。大部分情况是代码写成可下面这种方式，如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img src=&quot;&#123;&#123; imgUrl &#125;&#125;&quot;/&gt;</div></pre></td></tr></table></figure></p>
+<p>这样写肯定是不对的，vue不改变元素属性值需要用v-bind:来实现，如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img v-bind:src=&quot;&#123;&#123;imgUrl&#125;&#125;&quot; alt=&quot;&quot;&gt;</div></pre></td></tr></table></figure></p>
+<p>其他标签的属性也是一样，想改变标签的属 性值要用v-bind:来绑定事件。</p>
 
       
     </div>
