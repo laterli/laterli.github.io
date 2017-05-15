@@ -9,12 +9,16 @@
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="javascript实现接口有三种方式1.注释法：此方法程序文档范畴对接口的继承实现完全依靠程序员自觉123456789101112131415161718/*   interface People&amp;#123;         function createHead();         function createBody();   &amp;#125;*/var woman = function(n">
+<meta property="og:type" content="article">
 <meta property="og:title" content="later">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/05/15/js实现接口的集中方式/index.html">
 <meta property="og:site_name" content="later">
+<meta property="og:description" content="javascript实现接口有三种方式1.注释法：此方法程序文档范畴对接口的继承实现完全依靠程序员自觉123456789101112131415161718/*   interface People&amp;#123;         function createHead();         function createBody();   &amp;#125;*/var woman = function(n">
+<meta property="og:updated_time" content="2017-05-15T12:20:46.774Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="later">
+<meta name="twitter:description" content="javascript实现接口有三种方式1.注释法：此方法程序文档范畴对接口的继承实现完全依靠程序员自觉123456789101112131415161718/*   interface People&amp;#123;         function createHead();         function createBody();   &amp;#125;*/var woman = function(n">
   
     <link rel="alternative" href="/atom.xml" title="later" type="application/atom+xml">
   
@@ -164,9 +168,7 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-js实现接口的集中方式" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-js实现接口的集中方式" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2017/05/15/js实现接口的集中方式/" class="article-date">
@@ -188,206 +190,42 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/05/10/databases/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">databases</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
 
-
-
-
-
-
-  
-    <article id="post-databases" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/05/10/databases/" class="article-date">
-  	<time datetime="2017-05-10T11:32:51.000Z" itemprop="datePublished">2017-05-10</time>
-</a>
+<div class="ds-share share" data-thread-key="js实现接口的集中方式" data-title="" data-url="http://yoursite.com/2017/05/15/js实现接口的集中方式/"  data-images="https://github.com/laterli/laterli.github.io/blob/master/1.jpg?raw=true" data-content="">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
     </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/10/databases/">
-        databases
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="数据库的命令符操作指令"><a href="#数据库的命令符操作指令" class="headerlink" title="数据库的命令符操作指令"></a>数据库的命令符操作指令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">1. 链接数据库：</div><div class="line">    mysql -u root -p</div><div class="line">2. 退出数据库：</div><div class="line">    exit</div><div class="line">3. 设置root密码：</div><div class="line">    mysqladmin -u root -password aaaaa</div><div class="line">4. 更改root密码：</div><div class="line">    mysqladmin -u root -password bbbbb</div><div class="line">5. 创建数据库：</div><div class="line">    create database 数据库名;  在数据库中的操作后边都要加分号。</div><div class="line">6. 删除数据库：</div><div class="line">    drop database 数据库名;</div><div class="line">7. 查询数据库：</div><div class="line">    show datavases;</div><div class="line">8. 切换数据库：</div><div class="line">    use 数据库名;</div><div class="line">9. 显示数据库内的表：</div><div class="line">    show tables;</div><div class="line">10. 新建表：</div><div class="line">    create table 表名 (name varchar(20),age int(4));</div><div class="line">    以上varchar int为数据类型</div><div class="line">11. 删除表：</div><div class="line">    drop table 表名;</div><div class="line">12. 插入数据：</div><div class="line">    insert into 表名(name,age) value(&quot;hello&quot;,12);</div><div class="line">13. 查询数据：</div><div class="line">    select * from 表名 where name=&quot;hello&quot;</div><div class="line">    以上where后为条件。</div><div class="line">14. 删除表中数据：</div><div class="line">    delete from 表名 where name=&quot;hello&quot;</div><div class="line">    以上where为条件。</div><div class="line">15. 修改表中数据：</div><div class="line">    update 表名 set name=&quot;hello&quot; where name=&quot;hello&quot;</div><div class="line">16. 添加表头:</div><div class="line">    alter table 表名 add 字段名 类型(宽度)···；</div></pre></td></tr></table></figure>
-<h2 id="只看上边可能会有些思维混乱下面我列一个树状图出来。"><a href="#只看上边可能会有些思维混乱下面我列一个树状图出来。" class="headerlink" title="只看上边可能会有些思维混乱下面我列一个树状图出来。"></a>只看上边可能会有些思维混乱下面我列一个树状图出来。</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">数据库--------增加  create database 数据库名，</div><div class="line">--------------删除  drop database 数据库名，</div><div class="line"></div><div class="line">表------------增加  create table 表名(字段名 类型1 类型2···，字段名 类型1，类型2···)</div><div class="line">--------------删除  drop table 表名</div><div class="line"></div><div class="line">表中数据------增加  insert into 表名(字段名，字段名···) value(新值，新值···)</div><div class="line">********************上述操作可以在表头有id且有自动生成时自动生成id;还有一种方法</div><div class="line">********************insert into 表名 values(新值，新值，新值···)</div><div class="line">********************此操作不会自动添加id;</div><div class="line">--------------删除  delete from 表名 where 条件；</div><div class="line">--------------修改  update 表名 set 字段名=新值 where 条件；</div><div class="line">--------------查看  select * from 表名 where 条件；</div><div class="line">条件可以用and or not in(多个条件)来添加多个条件</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">id的主键设置 属性中添加primary key auto_increment</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">设置unique可以设置唯一性</div></pre></td></tr></table></figure>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
+ </div>
+ 
 
 
 
 
 
-
-
-  
-    <article id="post-first-Blog" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/05/05/first-Blog/" class="article-date">
-  	<time datetime="2017-05-05T02:11:44.000Z" itemprop="datePublished">2017-05-05</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/05/first-Blog/">
-        src属性的改变
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="关于在vue中改变图片的src属性"><a href="#关于在vue中改变图片的src属性" class="headerlink" title="关于在vue中改变图片的src属性"></a>关于在vue中改变图片的src属性</h3><p>很多人在vue的开发中遇到这样的问题，img的src属性绑定url变量，然后图片加载失败。大部分情况是代码写成可下面这种方式，如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img src=&quot;&#123;&#123; imgUrl &#125;&#125;&quot;/&gt;</div></pre></td></tr></table></figure></p>
-<p>这样写肯定是不对的，vue不改变元素属性值需要用v-bind:来实现，如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img v-bind:src=&quot;&#123;&#123;imgUrl&#125;&#125;&quot; alt=&quot;&quot;&gt;</div></pre></td></tr></table></figure></p>
-<p>其他标签的属性也是一样，想改变标签的属 性值要用v-bind:来绑定事件。</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/05/05/hello-world/" class="article-date">
-  	<time datetime="2017-05-05T02:05:57.667Z" itemprop="datePublished">2017-05-05</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/05/hello-world/">
-        Hello World
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-  
 </div>
       <footer id="footer">
   <div class="outer">
@@ -411,8 +249,8 @@
 		fancybox: true,
 		mathjax: true,
 		animate: undefined,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
