@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>later</title>
+  <title>李霖</title>
 
   <!-- keywords -->
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="later">
+<meta property="og:title" content="李霖">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="later">
+<meta property="og:site_name" content="李霖">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="later">
+<meta name="twitter:title" content="李霖">
   
-    <link rel="alternative" href="/atom.xml" title="later" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="李霖" type="application/atom+xml">
   
   
   <link rel="stylesheet" href="/css/style.css">
@@ -42,7 +42,7 @@
 		</a>
 
 		<hgroup>
-		  <h1 class="header-author"><a href="/">LiLin</a></h1>
+		  <h1 class="header-author"><a href="/">李霖</a></h1>
 		</hgroup>
 
 		
@@ -131,7 +131,7 @@
       <nav id="mobile-nav">
   	<div class="overlay">
   		<div class="slider-trigger"></div>
-  		<h1 class="header-author js-mobile-header hide">LiLin</h1>
+  		<h1 class="header-author js-mobile-header hide">李霖</h1>
   	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
@@ -139,7 +139,7 @@
 				<img lazy-src="https://github.com/laterli/laterli.github.io/blob/master/1.jpg?raw=true" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author">LiLin</h1>
+			  <h1 class="header-author">李霖</h1>
 			</hgroup>
 			
 			<nav class="header-menu">
@@ -163,6 +163,60 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-节点操作" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/07/14/节点操作/" class="article-date">
+  	<time datetime="2017-07-14T15:20:51.000Z" itemprop="datePublished">2017-07-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/14/节点操作/">
+        节点操作
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div></pre></td><td class="code"><pre><div class="line">var box,box1,box2,ul,li0,li1,li2,li3;</div><div class="line">    //获取节点</div><div class="line">    box = document.getElementsByName(&apos;div&apos;)//不常用</div><div class="line">    box = document.getElementsByTagName(&apos;div&apos;);</div><div class="line">    box = document.getElementsByClassName(&apos;box&apos;);</div><div class="line">    box = document.getElementById(&apos;box&apos;);</div><div class="line"></div><div class="line">    //创建节点</div><div class="line">    //document.createAttribute(attrName);attr节点</div><div class="line">    //document.createTextNode(text);文本节点</div><div class="line">    box1 = document.createElement(&apos;div&apos;);</div><div class="line">    box1.style.cssText = &quot;width:200px;height:200px;background:#f00;&quot;;</div><div class="line">    box.appendChild(box1);</div><div class="line"></div><div class="line">    //复制节点</div><div class="line">    box2 = box1.cloneNode(true);//参数表示是否复制节点的全部属性</div><div class="line">    document.body.appendChild(box2);</div><div class="line"></div><div class="line">    //删除节点</div><div class="line">    // box.removeChild(box1)</div><div class="line">    //为了保证兼容性，要判断元素节点的节点类型(nodeType)，若nodeType==1，再执行删除操作</div><div class="line"></div><div class="line">    //查找父级节点</div><div class="line">    console.log(box1.parentNode);</div><div class="line"></div><div class="line">    //添加节点</div><div class="line">    ul = document.createElement(&apos;ul&apos;);</div><div class="line">    li1 = document.createElement(&apos;li&apos;);</div><div class="line">    li0 = document.createElement(&apos;li&apos;);</div><div class="line">    document.body.appendChild(ul);</div><div class="line">    ul.appendChild(li1);</div><div class="line">    ul.appendChild(li0);</div><div class="line">    li1.innerHTML = &apos;hello&apos;;</div><div class="line">    li0.appendChild(document.createTextNode(&apos;lilin&apos;));</div><div class="line">    li2 = document.createElement(&apos;li&apos;)</div><div class="line">    ul.insertBefore(li2,li1);//在li1前边添加li2</div><div class="line">    li2.innerHTML = &apos;world&apos;;</div><div class="line"></div><div class="line">    //查找节点</div><div class="line">    console.log(ul.firstChild);</div><div class="line">    console.log(ul.lastChild);</div><div class="line">    console.log(ul.childNodes);</div><div class="line"></div><div class="line">    //获取相邻节点</div><div class="line">    console.log(li1.previousSibling);//li1上一个节点</div><div class="line">    console.log(li1.nextSibling);//li1的下一个节点</div><div class="line"></div><div class="line">    //替换节点</div><div class="line">    li3 = document.createElement(&apos;li&apos;);</div><div class="line">    li3.appendChild(document.createTextNode(&apos;你好&apos;));</div><div class="line">    ul.replaceChild(li3,li1);//利用父级替换</div><div class="line">    </div><div class="line">    //属性操作</div><div class="line">    getAttribute(name);//通过属性名称获取某个节点属性的值</div><div class="line">    setAttribute(name,value);//修改某个节点属性的值</div><div class="line">    removeAttribute(name);//删除某个属性</div></pre></td></tr></table></figure>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-javascript的几种排序算法" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -524,7 +578,7 @@
   <div class="outer">
     <div id="footer-info">
       <div class="footer-left">
-        &copy; 2017 LiLin
+        &copy; 2017 李霖
       </div>
         <div class="footer-right">
           <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
